@@ -26,22 +26,25 @@
     <!-- Transaction Area Start -->
     <section id="transaction-area">
         <div class="row">
+            <!-- col-1 -->
             <div class="col-md-4">
                 <div class="deposit">
                     <h5>Deposit</h5>
-                    <h1>$ 00</h1>
+                    <h1>$ <span id="currentDeposit">00</span></h1>
                 </div>
             </div>
+            <!-- col-2 -->
             <div class="col-md-4">
                 <div class="withrow">
                     <h5>Withrow</h5>
-                    <h1>$ 00</h1>
+                    <h1>$ <span id="currentWithrow">00</span></h1>
                 </div>
             </div>
+            <!-- col-3 -->
             <div class="col-md-4">
                 <div class="balance">
                     <h5>Balance</h5>
-                     <h1>$ 00</h1>
+                     <h1>$ <span id="currentBalance">1200</span></h1>
                 </div>
             </div>
         </div>
@@ -51,16 +54,16 @@
             <div class="col-md-6">
                 <div class="money-deposit">
                     <h5>Deposit</h5>
-                    <input type="number" placeholder="$ amount you want to deposit" class="form-control"><br>
-                    <button class="btn btn-success">Deposit</button>
+                    <input id="depositAmount" type="number" placeholder="$ amount you want to deposit" class="form-control"><br>
+                    <button id="addDeposit"  class="btn btn-success">Deposit</button>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="money-withrow">
                     <h5>Withdraw</h5>
-                    <input type="number" placeholder="$ amount you want to withrow" class="form-control"> 
+                    <input id="withrowAmount" type="number" placeholder="$ amount you want to withrow" class="form-control"> 
                     <br>
-                    <button class="btn btn-success">Withrow</button>
+                    <button id="addWithrow" class="btn btn-success">Withrow</button>
                 </div>
             </div>
         </div>
